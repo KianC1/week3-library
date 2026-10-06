@@ -10,9 +10,16 @@ namespace Library
         public String Title;
         public String Author;
         public int ISBN;
-    
 
-    public void DisplayBookInfo(Book book)
+        // Parameterised constructor to initialize the book object
+        public Book(string bookTitle, string bookAuthor, int bookISBN)
+        {
+            Title = bookTitle;
+            Author = bookAuthor;
+            ISBN = bookISBN;
+        }
+
+        public void DisplayBookInfo()
         {
             Console.WriteLine($"Book Title: {Title}");
             Console.WriteLine($"Book Author: {Author}");
